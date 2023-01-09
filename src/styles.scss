@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    font-family: sans-serif;
+}
+.container-fluid{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.common-form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 35%;
+}
+.form-input{
+    height: 44px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 2px solid #284486;
+    border-radius: 6px;
+}
+.form-button{
+    height: 44px;
+    cursor: pointer;
+    border: 2px solid #284486;
+    border-radius: 6px;
+    background-color: gold;
+}
+.error-p {
+    color: red;
+}
+.p-message {
+    color: green;
+    text-align: center;
+}
+.carousel-caption{
+    background-color: lightblue;
+    border-radius: 5px;
+    // bottom: 15.25rem !important;
+    color: blueviolet !important;
+    height: 6rem;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: lightblue;
+    border: 5px;
+    margin-top: -8rem;
+}
+@media (max-width: 468px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: lightblue;
+        border: 5px;
+        margin-top: 0;
+    }
+    .carousel-caption{
+        // background-color: lightblue;
+        // border-radius: 5px;
+        // // bottom: 15.25rem !important;
+        // color: blueviolet !important;
+        // height: 6rem;
+        display: none;
+    }
+}
+.carousel-indicators {
+    // margin-bottom: 16rem !important;
+}
+.error-message{
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    text-align: start;
+    color: red;
+    font-size: 12px;
+}
+button:disabled{
+    cursor: not-allowed;
+}

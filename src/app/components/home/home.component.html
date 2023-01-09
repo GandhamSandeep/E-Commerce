@@ -1,0 +1,138 @@
+<div>
+	<div class="row">
+		<!-- <ul class="category-section">
+			<li><a>Bestsellers</a></li>
+			<li><a>Most Gifted</a></li>
+			<li><a>Hot New Releases</a></li>
+			<li><a>Movers and Shakers</a></li>
+			<li><a>Most Wished</a></li>
+		</ul>
+		<hr> -->
+		<!--<h3 class="side-section-header">E-Comm BestSellers</h3>
+		<p>Our most popular products based on sales. Updated hourly.</p>
+		 <div class="col-2 side-section">
+			<p><b>Any Department Best sellers</b></p>
+			<ul>
+				<li>Amazon launchedpad</li>
+				<li>Amazon Renewed</li>
+				<li>Apps for Android</li>
+				<li>Baby Products</li>
+				<li>Bags, Wallets and Luggage</li>
+				<li>Beauty</li>
+				<li>Books</li>
+				<li>Car & Motorbike</li>
+				<li>Clothing & Accessories</li>
+				<li>Computers & Accessories</li>
+				<li>Electronics</li>
+				<li>Garden & Outdoors</li>
+				<li>Gift Cards</li>
+				<li>Grocery & Gourmet Foods</li>
+				<li>Health & Personal Care</li>
+				<hr>
+				<li>Amazon launchedpad</li>
+				<li>Amazon Renewed</li>
+				<li>Apps for Android</li>
+				<li>Baby Products</li>
+				<li>Bags, Wallets and Luggage</li>
+				<li>Beauty</li>
+				<li>Books</li>
+				<li>Car & Motorbike</li>
+				<li>Clothing & Accessories</li>
+				<li>Computers & Accessories</li>
+				<li>Electronics</li>
+				<li>Garden & Outdoors</li>
+				<li>Gift Cards</li>
+				<li>Grocery & Gourmet Foods</li>
+				<li>Health & Personal Care</li>
+			</ul>
+		</div> -->
+		<div class="">
+			<!-- <h3 class="best-sellers">Best Sellers in Mobiles,Laptops,shoes</h3> -->
+			<ngb-carousel *ngIf="popularProducts">
+				<ng-template *ngFor="let item of popularProducts" ngbSlide>
+					<div class="picsum-img-wrapper">
+						<img routerLink="/details/{{item.id}}" class="product-header-img" src="{{item.image}}"
+							alt="Random first slide" />
+					</div>
+					<div class="carousel-caption">
+						<h3>{{item.name}}</h3>
+						<p>{{item.description}}</p>
+					</div>
+				</ng-template>
+			</ngb-carousel>
+
+			<div class="product-list-wrapper">
+				<h2>Trending Products</h2>
+				<div class="row">
+					<div class="col" *ngFor="let item of trendyProducts">
+						<div class="product-item">
+							<img routerLink="/details/{{item.id}}" src="{{item.image}}" alt="image">
+							<div class="product-details">
+								<h5 class="name-header">{{item.name}}</h5>
+								<div class="product-price">
+									<h6>Price: {{item.price}}</h6>
+								</div>
+								<div class="product-color">
+									<h6>Color: {{item.color}}</h6>
+								</div>
+								<hr>
+								<div class="product-footer">
+									<a routerLink="/details/{{item.id}}">View Details</a>
+									<a href="">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-list-wrapper">
+				<h2>Promotion Products</h2>
+				<div class="row">
+					<div class="col" *ngFor="let item of trendyProducts">
+						<div class="product-item">
+							<img routerLink="/details/{{item.id}}" src="{{item.image}}" alt="image">
+							<div class="product-details">
+								<h5 class="name-header">{{item.name}}</h5>
+								<div class="product-price">
+									<h6>Price: {{item.price}}</h6>
+								</div>
+								<div class="product-color">
+									<h6>Color: {{item.color}}</h6>
+								</div>
+								<hr>
+								<div class="product-footer">
+									<a routerLink="/details/{{item.id}}">View Details</a>
+									<a href="">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-list-wrapper">
+				<h2>Recommended For You</h2>
+				<div class="row">
+					<div class="col" *ngFor="let item of trendyProducts">
+						<div class="product-item">
+							<img routerLink="/details/{{item.id}}" src="{{item.image}}" alt="image">
+							<div class="product-details">
+								<h5 class="name-header">{{item.name}}</h5>
+								<div class="product-price">
+									<h6>Price: {{item.price}}</h6>
+								</div>
+								<div class="product-color">
+									<h6>Color: {{item.color}}</h6>
+								</div>
+								<hr>
+								<div class="product-footer">
+									<a routerLink="/details/{{item.id}}">View Details</a>
+									<a href="">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

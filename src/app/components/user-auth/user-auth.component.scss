@@ -1,0 +1,26 @@
+.user-auth {
+    text-align: center;
+}
+.user-auth h1 {
+    margin-bottom: 50px;
+    margin-top: 4%;
+    color: blueviolet;
+}
+
+.user-login{
+    margin-bottom: 10rem;
+}
+
+.common-form p{
+    margin-top: 10px;
+    a{
+        color: blueviolet;
+        cursor: pointer;
+    }
+}
+.error-message{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}

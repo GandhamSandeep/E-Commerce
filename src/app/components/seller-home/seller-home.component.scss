@@ -1,0 +1,25 @@
+.product-list {
+    text-align: center;
+}
+table{
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-height: 160px;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.delete-icon {
+    color: #FF0000;
+}
+.adjust-update-link{
+    margin-left: 35%;
+    text-decoration: none;
+    color: #000000;
+}
